@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lapiceros Ecológicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1000;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 100%;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lapiceros Ecológicos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li>
+                <a href="#acerca">Acerca de</a>
+                <ul>
+                    <li><a href="#mas-informacion">Más Información</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">Servicios</a>
+                <ul>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#campanas">Campañas</a></li>
+                </ul>
+            </li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="lapiceros.jpg" style="width: 1000px;">
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a Lapiceros Ecológicos</h2>
+        <p>Descubre nuestra línea de lapiceros fabricados con materiales reciclados y sostenibles.</p>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una empresa comprometida con el medio ambiente, ofreciendo productos ecológicos para un futuro más verde.</p>
+    </section>
+
+    <section id="mas-informacion">
+        <h2>Más Información</h2>
+        <p>Aquí puedes encontrar más detalles sobre nuestra misión, visión y compromiso ambiental.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una variedad de servicios para diferentes necesidades. Escoge el servicio que más te interese.</p>
+    </section>
+
+    <section id="delivery">
+        <h2>Servicio de Delivery</h2>
+        <p>Realizamos entregas a domicilio para que puedas recibir nuestros productos ecológicos cómodamente en tu hogar o empresa.</p>
+    </section>
+
+    <section id="educacion">
+        <h2>Servicios de Educación</h2>
+        <p>Ofrecemos talleres y seminarios educativos sobre sostenibilidad y el uso de productos ecológicos.</p>
+    </section>
+
+    <section id="campanas">
+        <h2>Campañas Ecológicas</h2>
+        <p>Organizamos campañas de concientización para promover el uso de productos ecológicos y ayudar a reducir el impacto ambiental.</p>
+    </section>
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Explora algunas imágenes de nuestros lapiceros ecológicos. Estos productos están hechos con materiales reciclados y son completamente biodegradables.</p>
+        <div class="gallery">
+            <img src="lapiceros1.jpg" alt="Lapicero Ecológico 1">
+            <img src="lapiceros2.jpg" alt="Lapicero Ecológico 2">
+            <img src="lapiceros5.jpg" alt="Lapicero Ecológico 3">
+            <img src="lapiceros4.jpg" alt="Lapicero Ecológico 4">
+        </div>
+    </section>
+
+    <section id="contactos">
+        <h2>Contactos</h2>
+        <p>Para más información, contáctanos a través de nuestro correo electrónico: info@lapiceros.pe</p>
+    </section>
+</body>
+</html>
